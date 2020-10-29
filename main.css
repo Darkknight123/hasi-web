@@ -1,167 +1,228 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    .nav-bg {
-        background: rgba(20, 54, 1, 0.6);
-    }
-    
-    .navbar-nav .nav-link {
-        color: white !important
-    }
-    
-    .navbar-toggler {
-        outline: none!important;
-    }
-    
-    #hero {
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    #hero {
-        background-image: url("images.jpg") cover;
-    }
-    
-    #hero .carousel-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    
-    #hero h2 {
-        color: black;
-        margin-bottom: 30px;
-        font-size: 48px;
-        font-weight: bold;
-    }
-    
-    #hero p {
-        width: 80%;
-        animation-delay: 1s;
-        margin: 0 auto 30px auto;
-        color: black;
-    }
-    
-    #hero .carousel-control-prev,
-    #hero .carosuel-control-next {
-        width: 10%;
-    }
-    
-    #hero .carousel-control-next-icon,
-    #hero .carousel-control-prev-icon {
-        background: none;
-        color: black;
-        font-size: 48px;
-        line-height: 1;
-        width: auto;
-        height: auto;
-    }
-    
-    #hero .hero-btn {
-        font-weight: bold;
-        font-size: 17px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 12px 32px;
-        border-radius: 50px;
-        transition: 0.8s;
-        line-height: 1;
-        margin: 10px;
-        color: black;
-        animation-delay: 0.5s;
-        border: 2px solid #9ef596;
-    }
-    
-    #hero .hero-btn:hover {
-        background: #0a6801;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .tabs .nav-pills .nav-item {
-        margin-bottom: 10px;
-    }
-    
-    .tabs .nav-pills .nav-item .nav-link {
-        background: white;
-        border-radius: 4px;
-        color: black;
-        font-weight: bold;
-        border: 1px solid rgba(20, 54, 1, 0.6);
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-    .tabs .nav-pills .nav-item .nav-link span {
-        color: ;
-        font-size: 30px;
-    }
-    
-    .tabs .nav-pills .nav-item .nav-link .active {
-        color: white;
-        background: green;
-        border: 1px solid rgba(20, 54, 1, 0.6);
-    }
-    
-    .tabs .nav-pills .nav-item .nav-link .active span {
-        color: white;
-    }
-    
-    .tabs .tab-content {
-        background: white;
-        padding: 0;
-    }
-    
-    .tabs .tab-content .image {
-        width: 100%;
-        height: 400px;
-        margin-bottom: 20px;
-    }
-    
-    .tabs .tab-content h3 {
-        font-weight: bold;
-    }
-    
-    .tabs .tab-content h3 a {
-        color: black;
-    }
-    
-    .project-container {
-        background: #136d01;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .donation {
-        background: #7ff767;
-        color: black;
-        padding: 3px 3.5px;
-        position: absolute;
-        right: 0;
-        top: 70%;
-        transform: translateX(110%);
-        transition: all 1s ease-in-out;
-    }
-    
-    .danation:hover {
-        color: black;
-    }
-    
-    .project-container:hover .donation {
-        transform: translateX(0%);
-    }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            .nav-bg {
+                background: rgba(20, 54, 1, 0.6);
+            }
+            
+            .navbar-nav .nav-link {
+                color: white !important
+            }
+            
+            .navbar-toggler {
+                outline: none!important;
+            }
+            
+            #hero {
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            #hero {
+                background: image("images/cover-1.jpg");
+            }
+            
+            #hero .carousel-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+            
+            #hero h2 {
+                color: black;
+                margin-bottom: 30px;
+                font-size: 48px;
+                font-weight: bold;
+            }
+            
+            #hero p {
+                width: 80%;
+                animation-delay: 1s;
+                margin: 0 auto 30px auto;
+                color: black;
+            }
+            
+            #hero .carousel-control-prev,
+            #hero .carosuel-control-next {
+                width: 10%;
+            }
+            
+            #hero .carousel-control-next-icon,
+            #hero .carousel-control-prev-icon {
+                background: none;
+                color: black;
+                font-size: 48px;
+                line-height: 1;
+                width: auto;
+                height: auto;
+            }
+            
+            #hero .hero-btn {
+                font-weight: bold;
+                font-size: 17px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 12px 32px;
+                border-radius: 50px;
+                transition: 0.8s;
+                line-height: 1;
+                margin: 10px;
+                color: black;
+                animation-delay: 0.5s;
+                border: 2px solid #9ef596;
+            }
+            
+            #hero .hero-btn:hover {
+                background: #0a6801;
+                color: white;
+                text-decoration: none;
+            }
+            
+            .tabs .nav-pills .nav-item {
+                margin-bottom: 10px;
+            }
+            
+            .tabs .nav-pills .nav-item .nav-link {
+                background: white;
+                border-radius: 4px;
+                color: black;
+                font-weight: bold;
+                border: 1px solid rgba(20, 54, 1, 0.6);
+                font-size: 20px;
+                line-height: 30px;
+            }
+            
+            .tabs .nav-pills .nav-item .nav-link span {
+                color: ;
+                font-size: 30px;
+            }
+            
+            .tabs .nav-pills .nav-item .nav-link .active {
+                color: white;
+                background: green;
+                border: 1px solid rgba(20, 54, 1, 0.6);
+            }
+            
+            .tabs .nav-pills .nav-item .nav-link .active span {
+                color: white;
+            }
+            
+            .tabs .tab-content {
+                background: white;
+                padding: 0;
+            }
+            
+            .tabs .tab-content .image {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 20px;
+            }
+            
+            .tabs .tab-content h3 {
+                font-weight: bold;
+            }
+            
+            .tabs .tab-content h3 a {
+                color: black;
+            }
+            
+            .project-container {
+                background: #136d01;
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .donation {
+                background: #7ff767;
+                color: black;
+                padding: 3px 3.5px;
+                position: absolute;
+                right: 0;
+                top: 70%;
+                transform: translateX(110%);
+                transition: all 1s ease-in-out;
+            }
+            
+            .danation:hover {
+                color: black;
+            }
+            
+            .project-container:hover .donation {
+                transform: translateX(0%);
+            }
+            
+            .project-item {
+                display: block;
+                position: relative;
+                overflow: hidden;
+                max-width: 530px;
+                margin: auto auto 16px;
+            }
+            
+            .project-item .text {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                background: rgba(33, 37, 41, 0.2);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+            }
+            
+            .project-item .text .des {
+                color: white;
+                margin: auto 32px 32px;
+            }
+            
+            .project-item .text .des h2 {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            
+            .project-item .text .des p {
+                font-weight: lighter;
+                font-size: 20px;
+            }
+            
+            @media (min-width:992px) {
+                .project-item {
+                    max-width: none;
+                    margin: 0;
+                }
+                .project-item .text {
+                    transition: clip-path 0.2s ease-out, background-color 0.7s;
+                    clip-path: inset(0px);
+                }
+                .project-item .text .des {
+                    transition: opacity 0.2s;
+                    margin-left: 80px;
+                    margin-right: 80px;
+                    margin-bottom: 80px;
+                }
+                .project-item img {
+                    transition: clip-path 0.2s ease-out;
+                    clip-path: inset(-1px);
+                }
+                .project-item:hover img {
+                    clip-path: inset(32px);
+                }
+                .project-item:hover .text {
+                    background-color: rgba(25, 61, 1, 0.6);
+                }
+            }
