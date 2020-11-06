@@ -1,155 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="modals.css">
 </head>
 
+
 <body>
-    <div class="tabs">
-        <div class="tabs__sidebar">
-            <button class="tabs__button1 tabs__button1--active " data-for-tab="1">About us</button>
-            <button class="tabs__button1" data-for-tab="2">Our Beginning </button>
-            <button class="tabs__button1" data-for-tab="3">Our Vision</button>
-            <button class="tabs__button1" data-for-tab="4">Our Mission</button>
-            <button class="tabs__button1" data-for-tab="5">Our plans</button>
-        </div>
-        <div class="tabs__content tabs__content--active" data-tab="1">
-            <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
-            <h3><a href="#">About us</a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
-        </div>
-        <div class="tabs__content" data-tab="2">
-            <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
-            <h3><a href="#">Our Beginning </a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
-        </div>
-        <div class="tabs__content" data-tab="3">
-            <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
-            <h3><a href="#">Our Vision</a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
-        </div>
-        <div class="tabs__content" data-tab="4">
-            <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
-            <h3><a href="#">Our Mission</a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
-        </div>
-        <div class="tabs__content" data-tab="5">
-            <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
-            <h3><a href="#">Our plans</a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
-        </div>
-    </div>
-    <style>
-        .tabs {
-            border: 1px solid white;
-            display: flex;
-        }
-        
-        .tabs__sidebar {
-            margin-bottom: 10px;
-            width: 350px;
-            flex-shrink: 0;
-            background-color: white;
-        }
-        
-        .tabs__button1 {
-            display: block;
-            padding: 20px;
-            width: 100%;
-            outline: none;
-            cursor: pointer;
-            line-height: 30px;
-            background: white;
-            border-radius: 4px;
-            color: black;
-            font-weight: bold;
-            border: 1px solid rgba(20, 54, 1, 0.6);
-            font-size: 20px;
-            line-height: 30px;
-        }
-        
-        .tabs__button1:active {
-            background: #136d01;
-        }
-        
-        .tabs__button1:not(:last-of-type) {
-            border-bottom: 4px solid #dddddd;
-        }
-        
-        .tabs__button1--active {
-            font-weight: bold;
-            border-right: 2px solid#7ff767;
-            background: wheat;
-        }
-        
-        .tabs__content {
-            background: white;
-            padding: 0;
-            display: none;
-        }
-        
-        .image {
-            width: 60%;
-            height: 300px;
-            margin-bottom: 20px;
-        }
-        
-        h3 {
-            font-weight: bold;
-        }
-        
-        h3 a {
-            color: black;
-            text-decoration: none;
-        }
-        
-        .tabs__content--active {
-            display: block;
-        }
-        
-        .tabs__content>:first-child {
-            margin-top: 0;
-        }
-    </style>
 
-    <script>
-        function setupTabs() {
-            document.querySelectorAll(".tabs__button1").forEach(button => {
-                button.addEventListener("click", () => {
-                    const sideBar = button.parentElement;
-                    const tabsContainer = sideBar.parentElement;
-                    const tabNumber = button.dataset.forTab;
-                    const tabToActivate = tabsContainer.querySelector(`.tabs__content[data-tab="${tabNumber}"]`);
-
-                    sideBar.querySelectorAll(".tabs__button1").forEach(button => {
-                        button.classList.remove("tabs__button1--active");
-                    });
-
-
-
-                    tabsContainer.querySelectorAll(".tabs__content").forEach(tab => {
-                        tab.classList.remove("tabs__content--active");
-                    });
-
-                    button.classList.add("tabs__button1--active");
-                    tabToActivate.classList.add("tabs__content--active");
-                });
-
-            });
-        }
-        document.addEventListener("DOMContentLoaded", () => {
-            setupTabs();
-        });
-    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
