@@ -99,40 +99,42 @@
                         <button class="tabs__button1" data-for-tab="5">Our plans</button>
                     </div>
                     <div class="tabs__content tabs__content--active" data-tab="1">
-                        <div class="image" style='background-image:url(" images/cover-1.jpg ");'></div>
+                        <div class="image" style='background-image:url(" images/logo.jpg ");'></div>
                         <h3><a href="#">About us</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                            <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
+                        <p>Help A Society Initiative is a Community Based Organisatio(CBO) based in korogocho,Kenya established in 2019
+                            <br> and got registered in 2020 under the ministry of Gender and Social Services in kenya.
+                            <br> Our offices are located in Nairobi Kenya. HASI is dedicated to build a community that sees young people as game changers who have the power
+                            <br> of ideas to positively impact our community with, ideas that drives a new era of development, change, growth and productivity. </p>
                     </div>
                     <div class="tabs__content" data-tab="2">
-                        <div class="image" style='background-image:url(" images/help1");'></div>
+                        <div class="image" style='background-image:url(" images/logo.jpg");'></div>
                         <h3><a href="#">Our Beginning </a></h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
                             <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
                     </div>
                     <div class="tabs__content" data-tab="3">
-                        <div class="image" style='background-image:url(" images/help2.jpg ");'></div>
+                        <div class="image" style='background-image:url(" images/logo.jpg");'></div>
                         <h3><a href="#">Our Vision</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                            <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
+                        <p>Changing the view of the society about the young generation to view them in a different manner</p>
                     </div>
                     <div class="tabs__content" data-tab="4">
-                        <div class="image" style='background-image:url(" images/help3.jpg ");'></div>
+                        <div class="image" style='background-image:url(" images/logo.jpg ");'></div>
                         <h3><a href="#">Our Mission</a></h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
                             <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
                     </div>
                     <div class="tabs__content" data-tab="5">
-                        <div class="image" style='background-image:url(" images/help4.jpg ");'></div>
+                        <div class="image" style='background-image:url(" images/logo.jpg");'></div>
                         <h3><a href="#">Our plans</a></h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur modi rerum
-                            <br>laboriosam natus totam, pariatur molestiae accusamus ab ad aliquam placeat inventore fugiat debitis voluptate esse possimus a quibusdam dicta! </p>
+                        <p>HASI aims to nurture,empower and transform local young people to use their talents, skills and innovative ideas to bring a positive impact to the community and be key players in the society. Our programs are youth and teenage friendly,designed
+                            to impact knowledge and participation in social,political and economic issues to enable sustainability development in the society. We promote ideas of entrepreneurship to enable them to initiate income generating activities.
+                        </p>
                     </div>
                 </div>
                 <style>
                     .tabs {
                         border: 1px solid white;
-                        display: block;
+                        display: flex;
                     }
                     
                     .tabs__sidebar {
@@ -176,18 +178,17 @@
                     }
                     
                     .tabs__content {
-                        display: block;
-                        height: 900px;
+                        display: none;
+                        height: 500px;
                         width: auto;
                         background: white;
-                        padding-left: 13px;
-                        display: none;
+                        padding-left: 50px;
                     }
                     
                     .image {
                         width: 100%;
-                        height: 500px;
-                        margin-bottom: 20px;
+                        height: 60%;
+                        margin-bottom: 10px;
                     }
                     
                     h3 {
@@ -205,6 +206,73 @@
                     
                     .tabs__content>:first-child {
                         margin-top: 0;
+                    }
+                    
+                    @media(max-width:960px) {
+                        .tabs {
+                            border: 1px solid white;
+                            display: block;
+                        }
+                        .tabs__sidebar {
+                            padding-left: 0;
+                            margin-bottom: 10px;
+                            width: 375px;
+                            flex-shrink: 0;
+                            background-color: white;
+                        }
+                        .tabs__button1 {
+                            display: block;
+                            padding-left: 5px;
+                            padding: 30px;
+                            width: 100%;
+                            outline: none;
+                            cursor: pointer;
+                            line-height: 30px;
+                            background: white;
+                            border-radius: 10px;
+                            color: black;
+                            font-weight: bold;
+                            border: 1px solid rgba(20, 54, 1, 0.6);
+                            font-size: 20px;
+                            line-height: 30px;
+                        }
+                        .tabs__button1:active {
+                            background: #136d01;
+                        }
+                        .tabs__button1:not(:last-of-type) {
+                            border-bottom: 4px solid #dddddd;
+                        }
+                        .tabs__button1--active {
+                            display: block;
+                            font-weight: bold;
+                            border-right: 2px solid#7ff767;
+                            background: #136d01;
+                        }
+                        .tabs__content {
+                            display: none;
+                            height: auto;
+                            width: auto;
+                            background: white;
+                            padding-left: 20px;
+                        }
+                        .image {
+                            width: 100%;
+                            height: 60%;
+                            margin-bottom: 10px;
+                        }
+                        h3 {
+                            font-weight: bold;
+                        }
+                        h3 a {
+                            color: black;
+                            text-decoration: none;
+                        }
+                        .tabs__content--active {
+                            display: block;
+                        }
+                        .tabs__content>:first-child {
+                            margin-top: 0;
+                        }
                     }
                 </style>
 
@@ -246,8 +314,8 @@
             <div class="row my-3">
                 <div class="col-10 mx-auto text-center">
                     <h1 class="text-uppercase">Our latest Projects</h1>
-                    <p> lfjhfgkthjlnmn, ubgvbynyubniumjim,. ybybnynionmum,gbkntbyunbnui
-                        <P>
+                    <p>We have several projects outline to be done and others already done over the year
+                    </P>
                 </div>
             </div>
             <!---->
