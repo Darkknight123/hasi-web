@@ -142,14 +142,14 @@ body {
 }
 
 .project-container {
-    background: #136d01;
+    background: #b8bbb8;
     position: relative;
     overflow: hidden;
 }
 
 .donation {
-    background: #7ff767;
-    color: black;
+    background: #0b2506;
+    color: #b8bbb8;
     padding: 3px 3.5px;
     position: absolute;
     right: 0;
@@ -160,18 +160,20 @@ body {
 
 .danation:hover {
     color: black;
+    text-decoration: none;
 }
 
 .project-container:hover .donation {
     transform: translateX(0%);
+    text-decoration: none;
 }
 
 .project-item {
     display: block;
     position: relative;
     overflow: hidden;
-    max-width: 530px;
-    margin: auto auto 16px;
+    max-width: 500px;
+    margin: 200px;
 }
 
 .project-item .text {
@@ -223,7 +225,7 @@ body {
         clip-path: inset(32px);
     }
     .project-item:hover .text {
-        background-color: rgba(25, 61, 1, 0.6);
+        background-color: rgba(149, 158, 143, 0.6);
     }
 }
 
