@@ -28,7 +28,7 @@ body {
 }
 
 #hero {
-    background: image("images/cover-1.jpg");
+    background: rgba(20, 34, 16, 0.6);
 }
 
 #hero .carousel-container {
@@ -172,8 +172,8 @@ body {
     display: block;
     position: relative;
     overflow: hidden;
-    max-width: 500px;
-    margin: 200px;
+    max-width: 530px;
+    margin: auto auto 16px;
 }
 
 .project-item .text {
