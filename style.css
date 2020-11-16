@@ -1,0 +1,54 @@
+/* Home Slider 
+================================= */
+
+.carousel-home img {
+    width: 100%;
+}
+
+.carousel-home .carousel-control {
+    background: #1f76bd;
+    height: 80px;
+    width: 40px;
+    top: 50%;
+    margin-top: -40px;
+    -moz-transition: width, 0.3s;
+    -o-transition: width, 0.3s;
+    -webkit-transition: width, 0.3s;
+    transition: width, 0.3s;
+}
+
+.carousel-home .carousel-control .fa {
+    font-size: 2.5em;
+    padding-top: 12px;
+}
+
+.carousel-home .carousel-control:hover {
+    width: 50px;
+}
+
+.carousel-home .carousel-caption {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
+
+.carousel-home .carousel-title {
+    color: #fff;
+    font-family: "Dosis", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.carousel-home .carousel-subtitle {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.carousel-home .btn {
+    margin-top: 30px;
+}
+
+.section-home {
+    margin: 30px 0;
+}
